@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 
-export const Login = () => {
-  let [email, setEmail] = useState("carryislive@gmail.com");
-  let [password, setPassword] = useState("qwerty");
+export const Login = ({ handleLogin }) => {
+  // console.log(handleLogin);
+  let [email, setEmail] = useState("admin@example.com");
+  let [password, setPassword] = useState("123");
 
   let submitHandler = (e) => {
     e.preventDefault();
-    console.log(`email is ${email} , password is ${password}`);
+    handleLogin(email, password);
+    // console.log(`email is ${email} , password is ${password}`);
     setEmail("");
     setPassword("");
   };
   return (
     <div className="flex items-center justify-center h-screen w-screen">
-      <div className="border-2 border-red-600 p-20 rounded-3xl">
+      <div className="border-2 border-red-600 p-20 rounded-3xl hover:border-blue-600">
         <form
           onSubmit={submitHandler}
           className="flex flex-col items-center justify-center gap-5"
