@@ -1,7 +1,8 @@
 let employees = [
   {
     id: 1,
-    email: "employee1@example.com",
+    firstName: "rahul",
+    email: "hello@gmail.com",
     password: "123",
     tasks: [
       {
@@ -35,10 +36,17 @@ let employees = [
         failed: false,
       },
     ],
+    taskSummary: {
+      active: 2,
+      newTask: 1,
+      complete: 1,
+      failed: 0,
+    },
   },
   {
     id: 2,
-    email: "employee2@example.com",
+    firstName: "Priya",
+    email: "hello1@gmail.com",
     password: "123",
     tasks: [
       {
@@ -62,9 +70,16 @@ let employees = [
         failed: false,
       },
     ],
+    taskSummary: {
+      active: 1,
+      newTask: 1,
+      complete: 1,
+      failed: 0,
+    },
   },
   {
     id: 3,
+    firstName: "Amit",
     email: "employee3@example.com",
     password: "123",
     tasks: [
@@ -99,9 +114,16 @@ let employees = [
         failed: false,
       },
     ],
+    taskSummary: {
+      active: 2,
+      newTask: 2,
+      complete: 1,
+      failed: 0,
+    },
   },
   {
     id: 4,
+    firstName: "Neha",
     email: "employee4@example.com",
     password: "123",
     tasks: [
@@ -126,9 +148,16 @@ let employees = [
         failed: false,
       },
     ],
+    taskSummary: {
+      active: 1,
+      newTask: 1,
+      complete: 1,
+      failed: 0,
+    },
   },
   {
     id: 5,
+    firstName: "Suresh",
     email: "employee5@example.com",
     password: "123",
     tasks: [
@@ -163,6 +192,12 @@ let employees = [
         failed: false,
       },
     ],
+    taskSummary: {
+      active: 2,
+      newTask: 2,
+      complete: 1,
+      failed: 0,
+    },
   },
 ];
 
