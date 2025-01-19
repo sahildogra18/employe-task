@@ -17,13 +17,12 @@ function AllTask() {
         {authData.employees.map((elem) => {
           return (
             <>
-              <div className="bg-black-200 py-2 px-4 flex justify-between rounded mb-2 ">
+              <div className="  bg-black-200 py-2 px-4 flex justify-between rounded mb-2 ">
                 <h2 className="w-1/5 bg-white-600">{elem.firstName}</h2>
                 <h3 className="w-1/5 text-blue-400">
                   {elem.taskSummary.newTask}
                 </h3>
                 <h5 className="w-1/5 text-yellow-400">
-                  {" "}
                   {elem.taskSummary.active}
                 </h5>
                 <h5 className="w-1/5 text-green-400">

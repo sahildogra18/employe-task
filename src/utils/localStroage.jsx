@@ -1,7 +1,7 @@
 let employees = [
   {
     id: 1,
-    firstName: "rahul",
+    firstName: "Rahul",
     email: "hello@gmail.com",
     password: "123",
     tasks: [
