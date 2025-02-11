@@ -26,11 +26,7 @@ function CreateTask() {
     });
 
     let data = JSON.parse(localStorage.getItem("employees"));
-    // console.log(data);
-    // console.log(task);
-
     data.forEach((elem) => {
-      // console.log(elem.firstName);
       if (assignTo == elem.firstName) {
         // console.log(elem.tasks);
         elem.tasks.push(newTask);

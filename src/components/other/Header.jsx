@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { setLocaleStorage } from "../../utils/localStroage";
+import { useNavigate } from "react-router-dom";
 
 function Header({ data }) {
   let [userName, setUserName] = useState("");
+  let navigate = useNavigate();
   useEffect(() => {
     if (!data) {
       setUserName("Admin");
@@ -15,6 +17,7 @@ function Header({ data }) {
   function logOut() {
     localStorage.setItem("loggedInUser", "");
     window.location.reload();
+    // Navigate("/");
   }
   return (
     <div className="flex items-centre justify-between mb-20 ">
